@@ -1,0 +1,16 @@
+Test Cases:
+
+evalErr:
+
+evalErr(Plus (Num 3) (Num 4))  --correct answer
+evalErr(Plus (Num (-3)) (Num 4))  --shows neg. nums don't work
+evalErr(Minus (Num (-3)) (Num 4))  --shows neg. nums don't work
+evalErr(Minus (Num 1) (Num 4))  --shows neg. results don't work
+evalErr(Minus (Num 10) (Num 4))  --shows minus works
+evalErr(Mult (Num 10) (Num 4))  --shows mult works
+evalErr(Div (Num 12) (Num 4))  --shows div works
+evalErr(Div (Num 11) (Num 4))  --shows div only allows int results
+evalErr(Exp (Num 2) (Num 4))  --shows exp works
+
+
+
